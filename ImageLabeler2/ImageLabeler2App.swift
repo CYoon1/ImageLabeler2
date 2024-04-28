@@ -12,7 +12,7 @@ import SwiftData
 struct ImageLabeler2App: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self, DataModel.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,10 @@ struct ImageLabeler2App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            NavigationStack{
+                DataListView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
