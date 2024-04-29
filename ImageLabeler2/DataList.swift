@@ -16,15 +16,9 @@ struct DataListView: View {
         List {
             ForEach(dataModels) { model in
                 NavigationLink {
-                    VStack {
-                        Text(model.id.description)
-                        Text(model.dateCreated, style: .date)
-                        ImageBackground(dataModel: model)
-                    }
-                    
+                    DataEditView(model: model)
                 } label: {
                     HStack {
-//                        ImageBackground(dataModel: model)
                         VStack {
                             Text(model.name)
                             Text(model.dateCreated, style: .date)
@@ -63,6 +57,41 @@ struct DataListView: View {
         withAnimation {
             modelContext.delete(dataModel)
         }
+    }
+}
+struct DataEditView: View {
+    @Bindable var model: DataModel
+    
+    var body: some View {
+        ZStack {
+            HStack {
+                VStack {
+                    Text(model.id.description)
+                    TextField("Save Name", text: $model.name)
+                    Text(model.dateCreated, style: .date)
+                    ImageBackground(dataModel: model)
+                }
+                Spacer()
+                VStack {
+                    Text("New Line")
+                    Button("New Label") {
+                        let newLabel = LabelData()
+                        self.model.labels.append(newLabel)
+                    }
+                }
+            }
+            ForEach(model.labels) { label in
+                LabelView(data: label, save: updateLabel)
+            }
+        }
+    }
+    private func addLabel() {
+        let newLabel = LabelData()
+        model.labels.append(newLabel)
+    }
+    private func updateLabel(_ data: LabelData) {
+        guard let index = model.labels.firstIndex(where: {data.id == $0.id}) else { return }
+        model.labels[index] = data
     }
 }
 

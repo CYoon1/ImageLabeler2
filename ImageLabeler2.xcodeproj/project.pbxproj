@@ -15,6 +15,7 @@
 		D87F1B152BDEBB750019B4E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B142BDEBB750019B4E6 /* Model.swift */; };
 		D87F1B172BDEBBEE0019B4E6 /* DataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B162BDEBBEE0019B4E6 /* DataList.swift */; };
 		D87F1B192BDEDABB0019B4E6 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B182BDEDABB0019B4E6 /* PhotoView.swift */; };
+		D87F1B1B2BDF03640019B4E6 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B1A2BDF03640019B4E6 /* LabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D87F1B142BDEBB750019B4E6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D87F1B162BDEBBEE0019B4E6 /* DataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataList.swift; sourceTree = "<group>"; };
 		D87F1B182BDEDABB0019B4E6 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		D87F1B1A2BDF03640019B4E6 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D87F1B042BDEBB280019B4E6 /* ImageLabeler2App.swift */,
 				D87F1B062BDEBB280019B4E6 /* ContentView.swift */,
 				D87F1B162BDEBBEE0019B4E6 /* DataList.swift */,
+				D87F1B1A2BDF03640019B4E6 /* LabelView.swift */,
 				D87F1B142BDEBB750019B4E6 /* Model.swift */,
 				D87F1B082BDEBB280019B4E6 /* Item.swift */,
 				D87F1B0A2BDEBB290019B4E6 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			files = (
 				D87F1B172BDEBBEE0019B4E6 /* DataList.swift in Sources */,
 				D87F1B072BDEBB280019B4E6 /* ContentView.swift in Sources */,
+				D87F1B1B2BDF03640019B4E6 /* LabelView.swift in Sources */,
 				D87F1B092BDEBB280019B4E6 /* Item.swift in Sources */,
 				D87F1B192BDEDABB0019B4E6 /* PhotoView.swift in Sources */,
 				D87F1B052BDEBB280019B4E6 /* ImageLabeler2App.swift in Sources */,
