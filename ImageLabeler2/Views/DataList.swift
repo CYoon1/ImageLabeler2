@@ -66,22 +66,28 @@ struct DataEditView: View {
         ZStack {
             HStack {
                 VStack {
-                    Text(model.id.description)
                     TextField("Save Name", text: $model.name)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                     Text(model.dateCreated, style: .date)
                     ImageBackground(dataModel: model)
                 }
                 Spacer()
                 VStack {
-                    Text("New Line")
-                    Button("New Label") {
-                        let newLabel = LabelData()
-                        self.model.labels.append(newLabel)
+                    Button("New Line") {
+                        addLine()
                     }
+                    .buttonStyle(BorderedButtonStyle())
+                    Button("New Label") {
+                        addLabel()
+                    }
+                    .buttonStyle(BorderedButtonStyle())
                 }
             }
             ForEach(model.labels) { label in
                 LabelView(data: label, save: updateLabel)
+            }
+            ForEach(model.lines) { line in
+                LineView(data: line, save: updateLine)
             }
         }
     }
@@ -92,6 +98,14 @@ struct DataEditView: View {
     private func updateLabel(_ data: LabelData) {
         guard let index = model.labels.firstIndex(where: {data.id == $0.id}) else { return }
         model.labels[index] = data
+    }
+    private func addLine() {
+        let newLine = LineData()
+        model.lines.append(newLine)
+    }
+    private func updateLine(_ data: LineData) {
+        guard let index = model.lines.firstIndex(where: {data.id == $0.id}) else { return }
+        model.lines[index] = data
     }
 }
 

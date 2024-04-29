@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86A16FD2BE02896006808FA /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A16FC2BE02896006808FA /* LineView.swift */; };
 		D87F1B052BDEBB280019B4E6 /* ImageLabeler2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B042BDEBB280019B4E6 /* ImageLabeler2App.swift */; };
 		D87F1B072BDEBB280019B4E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B062BDEBB280019B4E6 /* ContentView.swift */; };
 		D87F1B092BDEBB280019B4E6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F1B082BDEBB280019B4E6 /* Item.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D86A16FC2BE02896006808FA /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		D87F1B012BDEBB280019B4E6 /* ImageLabeler2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLabeler2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87F1B042BDEBB280019B4E6 /* ImageLabeler2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabeler2App.swift; sourceTree = "<group>"; };
 		D87F1B062BDEBB280019B4E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D86A16FE2BE029FC006808FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D87F1B162BDEBBEE0019B4E6 /* DataList.swift */,
+				D86A16FC2BE02896006808FA /* LineView.swift */,
+				D87F1B1A2BDF03640019B4E6 /* LabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D87F1AF82BDEBB280019B4E6 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +73,11 @@
 		D87F1B032BDEBB280019B4E6 /* ImageLabeler2 */ = {
 			isa = PBXGroup;
 			children = (
-				D87F1B182BDEDABB0019B4E6 /* PhotoView.swift */,
 				D87F1B042BDEBB280019B4E6 /* ImageLabeler2App.swift */,
-				D87F1B062BDEBB280019B4E6 /* ContentView.swift */,
-				D87F1B162BDEBBEE0019B4E6 /* DataList.swift */,
-				D87F1B1A2BDF03640019B4E6 /* LabelView.swift */,
+				D87F1B182BDEDABB0019B4E6 /* PhotoView.swift */,
 				D87F1B142BDEBB750019B4E6 /* Model.swift */,
+				D86A16FE2BE029FC006808FA /* Views */,
+				D87F1B062BDEBB280019B4E6 /* ContentView.swift */,
 				D87F1B082BDEBB280019B4E6 /* Item.swift */,
 				D87F1B0A2BDEBB290019B4E6 /* Assets.xcassets */,
 				D87F1B0C2BDEBB290019B4E6 /* Preview Content */,
@@ -156,6 +167,7 @@
 				D87F1B072BDEBB280019B4E6 /* ContentView.swift in Sources */,
 				D87F1B1B2BDF03640019B4E6 /* LabelView.swift in Sources */,
 				D87F1B092BDEBB280019B4E6 /* Item.swift in Sources */,
+				D86A16FD2BE02896006808FA /* LineView.swift in Sources */,
 				D87F1B192BDEDABB0019B4E6 /* PhotoView.swift in Sources */,
 				D87F1B052BDEBB280019B4E6 /* ImageLabeler2App.swift in Sources */,
 				D87F1B152BDEBB750019B4E6 /* Model.swift in Sources */,
